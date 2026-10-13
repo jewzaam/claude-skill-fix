@@ -1,7 +1,6 @@
 ---
 name: fix
-description: Run make check and fix issues, optionally in a submodule
-allowed-tools: Bash, Read, Edit, Glob, Grep
+description: Run a project's checks and fix reported issues, optionally in a submodule. Use when asked to validate or repair a codebase.
 ---
 
 # Fix Skill
@@ -24,8 +23,8 @@ Run `make check` to validate code and automatically fix any issues found. Suppor
 3. **Fix issues:**
    - Parse error output from make check
    - Identify files and issues
-   - Use Read tool to examine code
-   - Use Edit tool to fix issues
+   - Inspect the relevant code before editing
+   - Make targeted fixes
    - Re-run `make check` to verify
 
 4. **Iterate until clean:**
